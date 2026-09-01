@@ -677,6 +677,99 @@
     document.querySelectorAll('[data-reveal]').forEach((el) => revealObserver.observe(el));
   }
 
+  function initCursorFollower() {
+    if ('ontouchstart' in window || navigator.maxTouchPoints > 0) return;
+
+    const cursor = document.getElementById('workCustomCursor') || document.querySelector('.work-custom-cursor');
+    if (!cursor) return;
+
+    const cursorText = cursor.querySelector('.work-custom-cursor__text');
+
+    let mouseX = -100, mouseY = -100;
+    let cursorX = -100, cursorY = -100;
+
+    const CURSOR_LERP = 0.18;
+
+    document.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      if (!cursor.classList.contains('is-active')) {
+        cursor.classList.add('is-active');
+      }
+    });
+
+    document.addEventListener('mouseleave', () => {
+      cursor.classList.remove('is-active');
+    });
+
+    document.addEventListener('mouseenter', () => {
+      cursor.classList.add('is-active');
+    });
+
+    function animate() {
+      cursorX += (mouseX - cursorX) * CURSOR_LERP;
+      cursorY += (mouseY - cursorY) * CURSOR_LERP;
+
+      cursor.style.left = (cursorX + 12) + 'px';
+      cursor.style.top = (cursorY + 12) + 'px';
+
+      requestAnimationFrame(animate);
+    }
+
+    function setupHoverListeners() {
+      const hoverTargets = document.querySelectorAll(
+        'a, button, [role="button"], [data-cursor-hover]'
+      );
+
+      hoverTargets.forEach(target => {
+        target.addEventListener('mouseenter', () => {
+          const hoverText = target.getAttribute('data-cursor-hover');
+          if (hoverText && cursorText) {
+            cursorText.textContent = hoverText;
+            cursor.classList.add('is-hover');
+          } else {
+            cursor.style.width = '24px';
+            cursor.style.height = '24px';
+          }
+        });
+
+        target.addEventListener('mouseleave', () => {
+          cursor.classList.remove('is-hover');
+          cursor.style.width = '';
+          cursor.style.height = '';
+          if (cursorText) cursorText.textContent = '';
+        });
+      });
+    }
+
+    document.addEventListener('mouseover', (e) => {
+      const target = e.target.closest('a, button, [role="button"], [data-cursor-hover]');
+      if (target) {
+        const hoverText = target.getAttribute('data-cursor-hover');
+        if (hoverText && cursorText) {
+          cursorText.textContent = hoverText;
+          cursor.classList.add('is-hover');
+        } else {
+          cursor.style.width = '24px';
+          cursor.style.height = '24px';
+        }
+      }
+    });
+
+    document.addEventListener('mouseout', (e) => {
+      const target = e.target.closest('a, button, [role="button"], [data-cursor-hover]');
+      if (target && !target.contains(e.relatedTarget)) {
+        cursor.classList.remove('is-hover');
+        cursor.style.width = '';
+        cursor.style.height = '';
+        if (cursorText) cursorText.textContent = '';
+      }
+    });
+
+    setupHoverListeners();
+    requestAnimationFrame(animate);
+  }
+
   function initWork() {
     renderPlaygroundCards();
     renderTextList();
@@ -687,6 +780,7 @@
     initTextListHover();
     initArchivesParallax();
     initPushableImages();
+    initCursorFollower();
   }
 
   if (document.readyState === 'loading') {
