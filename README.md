@@ -3,6 +3,7 @@
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Online-brightgreen?style=for-the-badge&logo=githubpages&logoColor=white)](https://thisisarpit26-prog.github.io/Studio-Namma-UI/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
 > A pixel-perfect, high-performance UI recreation and clone of the award-winning creative agency website **Studio Namma** ([studionamma.com](https://studionamma.com)). Built from the ground up using pure **Vanilla HTML5, CSS3, and JavaScript (ES6+)** without any heavy UI framework dependencies.
@@ -14,6 +15,12 @@
 This project is an advanced frontend clone designed to showcase modern web design aesthetics, bespoke micro-interactions, custom typography, and dynamic media synchronization. It demonstrates how to build rich, award-winning agency-grade web experiences using standard web technologies.
 
 > **Disclaimer:** This project is created for **educational, learning, and portfolio demonstration purposes**. All original design concepts, trademarks, and media assets belong to **Studio Namma** and their respective clients.
+
+---
+
+## 🚀 Live Demo
+
+Experience the live application here: **[https://thisisarpit26-prog.github.io/Studio-Namma-UI/](https://thisisarpit26-prog.github.io/Studio-Namma-UI/)**
 
 ---
 
@@ -59,81 +66,6 @@ This project is an advanced frontend clone designed to showcase modern web desig
 | **JavaScript (ES6+)** | Component lifecycle, dynamic DOM rendering, custom cursor tracking, theme toggle |
 | **Font Awesome 6** | Vector UI iconography |
 | **Google Fonts & Custom Typography** | *Mixtape Extra Condensed*, *Neue Montreal*, *GT Pressura Mono*, *Anton*, *Bebas Neue* |
-
----
-
-## 📂 Project Structure
-
-```text
-Studio-Namma/
-├── assets/                    # Project media assets
-│   ├── playground-photo1.webp # Static image previews
-│   ├── playground-photo2.webp
-│   ├── playground-photo3.webp
-│   ├── playground-photo4.webp
-│   ├── playground-video1.mp4  # Loopable short-form video previews
-│   ├── playground-video2.mp4
-│   ├── playground-video3.mp4
-│   └── playground-video4.mp4
-├── css/                       # Modular stylesheet architecture
-│   ├── footer.css             # Footer component styles
-│   ├── home.css               # Homepage layout, hero, playground & services styles
-│   ├── navbar.css             # Navbar, dark mode tokens & overlay menu styles
-│   └── work.css               # Portfolio showcase, text-list & archive styles
-├── fonts/                     # Custom typography (@font-face)
-│   ├── GTPressuraMono-Light.ttf
-│   ├── Mixtape-NormalMedium.otf
-│   ├── Mixtape-NormalRegular.otf
-│   ├── Mixtape-NormalRegularItalic.otf
-│   ├── Mixtape-NormalSemiBold.otf
-│   ├── MixtapeExtraCondensed-ExtraBold.otf
-│   └── NeueMontreal-Regular.otf
-├── images/                    # UI branding assets & icons
-│   ├── whatsapp.png
-│   └── waOpen.png
-├── js/                        # Modular JavaScript components
-│   ├── footer.js              # Dynamic footer injection & newsletter interaction
-│   ├── home.js                # Home hero, playground cards, services & custom cursor
-│   ├── navbar.js              # Navbar rendering, theme switcher & menu drawer
-│   └── work.js                # Project showcase data, video preview hover & archives
-├── .gitignore                 # Ignored files (OS, IDE, and temporary captures)
-├── index.html                 # Main Homepage
-├── README.md                  # Project documentation
-└── work.html                  # Portfolio & Showcase Page
-```
-
----
-
-## 🚀 Getting Started
-
-Follow these steps to run the project locally on your machine:
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/thisisarpit26-prog/Studio-Namma-UI.git
-```
-
-### 2. Navigate to the project directory
-```bash
-cd Studio-Namma-UI
-```
-
-### 3. Open in Browser
-Since this is built with pure Vanilla HTML/CSS/JS, you do not need any build steps or `npm install`.
-
-- **Option A (VS Code Live Server - Recommended):**
-  1. Open the folder in VS Code.
-  2. Right-click on `index.html` and select **"Open with Live Server"**.
-  
-- **Option B (Any Static Server):**
-  ```bash
-  # Using Python 3
-  python -m http.server 3000
-  
-  # Or using Node npx serve
-  npx serve .
-  ```
-  Then open `http://localhost:3000` in your web browser.
 
 ---
 
