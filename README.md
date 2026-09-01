@@ -6,6 +6,19 @@
 [![Live Demo](https://img.shields.io/badge/Live_Demo-Online-brightgreen?style=for-the-badge&logo=githubpages&logoColor=white)](https://thisisarpit26-prog.github.io/Studio-Namma-UI/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
+---
+
+## 👥 Team
+
+| Role | Name | Contribution |
+| :--- | :--- | :--- |
+| 👑 **Team Leader** | **Arpit** | Home Page — Hero section, Playground Grid, Services Accordion, Custom Cursor & Theming |
+| 🛠️ **Member** | **Sandeep** | Work Page — Portfolio Showcase, Interactive Text List & Project Archives |
+| 🛠️ **Member** | **Satyam** | Footer — Dynamic Footer Injection & Newsletter Interaction |
+| 🛠️ **Member** | **Aditya** | Footer — Layout, Styling & Responsive Footer Design |
+
+---
+
 > A pixel-perfect, high-performance UI recreation and clone of the award-winning creative agency website **Studio Namma** ([studionamma.com](https://studionamma.com)). Built from the ground up using pure **Vanilla HTML5, CSS3, and JavaScript (ES6+)** without any heavy UI framework dependencies.
 
 ---
@@ -93,4 +106,6 @@ Contributions, issues, and feature suggestions are welcome!
 5. Open a Pull Request
 
 ---
+
+*Made with ❤️ by Team Studio Namma UI — Arpit · Sandeep · Satyam · Aditya*
 
