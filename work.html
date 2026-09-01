@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio & Success Stories | Studio Namma</title>
+  <meta name="description" content="Our portfolio showcases Webflow development, web design, and branding projects. Clients include Matera, Silvr, Qonto, and ambitious brands." />
+  <meta property="og:title" content="Portfolio & Success Stories | Studio Namma" />
+  <meta property="og:description" content="Our portfolio showcases Webflow development, web design, and branding projects." />
+  <meta property="og:type" content="website" />
+
+  <!-- Stylesheets in Sensible Order -->
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/work.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <nav class="navbar" id="navbar"></nav>
+
+  <!-- Work Page Content -->
+  <div class="work-main-content">
+    <section class="work-hero" id="workHero">
+      <h1 class="work-hero__headline" data-split-animate>Our<br>Game</h1>
+    </section>
+
+    <section class="work-text-list" id="workProjectList">
+      <div class="work-text-list__label">RECENT PROJECTS (10)</div>
+      <div class="work-text-list__layout">
+        <div class="work-text-list__items" id="workProjectItems"></div>
+        <div class="work-text-list__showcase" id="workProjectShowcase">
+          <div class="work-text-list__showcase-inner">
+            <video id="workShowcaseVideo1" autoplay loop muted playsinline preload="auto" class="work-showcase-media active"></video>
+            <video id="workShowcaseVideo2" autoplay loop muted playsinline preload="auto" class="work-showcase-media"></video>
+            <img id="workShowcaseImg" src="" alt="Project Preview" class="work-showcase-media" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work-archives" id="workArchives">
+      <div class="work-archives__header">
+        <div class="work-archives__label">ARCHIVES (10)</div>
+      </div>
+      <div class="work-archives__list" id="workArchivesList"></div>
+    </section>
+  </div>
+
+  <!-- Semantic Footer Container -->
+  <footer class="site-footer" id="footer"></footer>
+
+  <!-- Scripts in Sensible Order -->
+  <script src="js/navbar.js"></script>
+  <script src="js/work.js"></script>
+  <script src="js/footer.js"></script>
+</body>
+</html>

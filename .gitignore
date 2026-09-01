@@ -1,0 +1,12 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Root screen recordings / temporary video captures
+20260831-*.mp4
+*.tmp

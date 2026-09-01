@@ -1,0 +1,475 @@
+/* =========================================
+   FOOTER STYLES (Studio Namma - Pixel Perfect)
+   ========================================= */
+
+.site-footer {
+  width: 100%;
+  background-color: #e4e4e4;
+  color: #111;
+  overflow: hidden;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+[data-theme="dark"] .site-footer {
+  background-color: #111;
+  color: #e4e4e4;
+}
+
+/* --- Box 1: Let's Work Together Pitch --- */
+.footer-box1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 48px;
+  margin-bottom: 70px;
+}
+
+.footer-box1-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-box1-title {
+  font-family: 'Mixtape Extra Condensed', 'Impact', sans-serif;
+  font-size: clamp(75px, 11vw, 155px);
+  font-weight: 800;
+  line-height: 0.84;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #111;
+  margin: 0;
+  display: block;
+}
+
+[data-theme="dark"] .footer-box1-title {
+  color: #fff;
+}
+
+.footer-box1-row2 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 4px;
+}
+
+.footer-box1-image {
+  height: clamp(60px, 8vw, 105px);
+  width: 0px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #000;
+  transition: width 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.footer-box1-image.footer-show-image {
+  width: clamp(100px, 12vw, 160px);
+}
+
+.footer-box1-image img,
+.footer-box1-image video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.footer-box1-right {
+  max-width: 440px;
+  padding-top: 12px;
+}
+
+.footer-box1-right p {
+  font-family: 'Mixtape', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: clamp(18px, 2vw, 24px);
+  line-height: 1.35;
+  font-weight: 500;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+[data-theme="dark"] .footer-box1-right p {
+  color: #e4e4e4;
+}
+
+.footer-box1-right-link {
+  font-family: 'Gt Pressura Mono', 'Space Mono', monospace;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #111;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  display: inline-block;
+  margin-top: 24px;
+  transition: opacity 0.2s ease;
+}
+
+[data-theme="dark"] .footer-box1-right-link {
+  color: #fff;
+}
+
+.footer-box1-right-link:hover {
+  opacity: 0.7;
+}
+
+/* --- Box 2: Horizontal Video Strip Reel --- */
+.footer-box2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 0 48px;
+  margin-bottom: 80px;
+}
+
+.footer-video-card {
+  flex: 1;
+  min-width: 0;
+  aspect-ratio: 16 / 10;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #000;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.footer-video-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* --- Box 3: Navigation Links & Studio Details --- */
+.footer-box3 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 48px;
+  margin-bottom: 80px;
+}
+
+.footer-box3-left {
+  display: flex;
+  gap: 70px;
+}
+
+.footer-links-col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-links-col a {
+  font-family: 'Gt Pressura Mono', 'Space Mono', monospace;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #111;
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+[data-theme="dark"] .footer-links-col a {
+  color: #e4e4e4;
+}
+
+.footer-links-col a:hover {
+  opacity: 1;
+}
+
+.footer-box3-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 480px;
+  text-align: left;
+  font-family: 'Gt Pressura Mono', 'Space Mono', monospace;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #111;
+  line-height: 1.6;
+}
+
+[data-theme="dark"] .footer-box3-right {
+  color: #e4e4e4;
+}
+
+.footer-box3-right p {
+  margin: 0;
+}
+
+.footer-box3-right a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-box3-right a:hover {
+  text-decoration: underline;
+}
+
+/* --- Box 4: Big NAMMA Display Graphic --- */
+.footer-box4 {
+  width: 100%;
+  text-align: center;
+  font-family: 'Mixtape Extra Condensed', 'Impact', sans-serif;
+  font-size: clamp(120px, 30.5vw, 480px);
+  font-weight: 800;
+  line-height: 0.78;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #111;
+  user-select: none;
+  margin: 0;
+  padding-bottom: 24px;
+  overflow: hidden;
+}
+
+[data-theme="dark"] .footer-box4 {
+  color: #fff;
+}
+
+/* --- Footer Animations --- */
+.footer-animate {
+  transform: rotateX(90deg);
+  transform-origin: bottom;
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.9s ease;
+  opacity: 0;
+}
+
+.footer-animate.footer-show {
+  transform: rotateX(0deg);
+  opacity: 1;
+}
+
+/* --- Fixed Bottom Ticker Bar --- */
+.site-ticker-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+  background: #e4e4e4;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  font-family: 'Gt Pressura Mono', 'Space Mono', monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #111;
+  z-index: 990;
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+
+[data-theme="dark"] .site-ticker-bar {
+  background: #111;
+  color: #e4e4e4;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.site-ticker-bar__right {
+  display: flex;
+  gap: 16px;
+  margin-right: 50px;
+}
+
+/* --- Floating WhatsApp Button & Modal --- */
+.floating-whatsapp-btn {
+  position: fixed;
+  bottom: 12px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #0044ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10000;
+  box-shadow: 0 4px 15px rgba(0, 68, 255, 0.35);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+}
+
+.floating-whatsapp-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 20px rgba(0, 68, 255, 0.5);
+}
+
+.floating-whatsapp-btn img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.whatsapp-modal {
+  position: fixed;
+  bottom: 68px;
+  right: 24px;
+  width: 320px;
+  background: #232d36;
+  color: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
+  z-index: 10000;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  display: none;
+  animation: wa-slide-up 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes wa-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.whatsapp-modal__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.whatsapp-modal__avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #444;
+  position: relative;
+  overflow: hidden;
+}
+
+.whatsapp-modal__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.whatsapp-modal__avatar::after {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 10px;
+  height: 10px;
+  background: #25d366;
+  border: 2px solid #232d36;
+  border-radius: 50%;
+}
+
+.whatsapp-modal__info h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.whatsapp-modal__info span {
+  font-size: 11px;
+  color: #25d366;
+}
+
+.whatsapp-modal__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.whatsapp-modal__close:hover {
+  color: #fff;
+}
+
+.whatsapp-modal__body {
+  padding: 14px 0;
+}
+
+.whatsapp-modal__bubble {
+  background: #182229;
+  padding: 12px 14px;
+  border-radius: 8px 8px 8px 2px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #e9edef;
+}
+
+.whatsapp-modal__footer {
+  padding-top: 4px;
+}
+
+.whatsapp-modal__action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  background: #0044ff;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.whatsapp-modal__action-btn:hover {
+  background: #0033cc;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 900px) {
+  .footer-box1 {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 32px;
+  }
+  .footer-box2 {
+    padding: 0 20px;
+    overflow-x: auto;
+  }
+  .footer-video-card {
+    min-width: 160px;
+  }
+  .footer-box3 {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 40px;
+  }
+  .footer-box3-left {
+    gap: 40px;
+  }
+  .site-ticker-bar {
+    padding: 0 20px;
+    font-size: 9px;
+  }
+  .site-ticker-bar__right {
+    margin-right: 40px;
+  }
+}
