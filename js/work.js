@@ -217,7 +217,7 @@
       const nodes = Array.from(el.childNodes);
       el.innerHTML = '';
 
-      let charIndex = 0;
+
       let currentWord = document.createElement('span');
       currentWord.className = 'work-split-word';
 
@@ -238,7 +238,7 @@
 
             mask.appendChild(charSpan);
             currentWord.appendChild(mask);
-            charIndex++;
+
           });
         }
       });

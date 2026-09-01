@@ -29,14 +29,7 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'Neue Montreal';
-  src: url('../fonts/NeueMontreal-Regular.otf') format('opentype'),
-    url('https://cdn.prod.website-files.com/679cb9cacf00799ba4b4c985/6839706715b5360bdb1d1ffd_NeueMontreal-Regular.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
+
 
 :root {
   --bg: #e4e4e4;
@@ -46,7 +39,6 @@
   --white: #ffffff;
 
   --font-display: 'Mixtape Extra Condensed', 'Impact', sans-serif;
-  --font-projects: 'Mixtape Extra Condensed', 'Impact', sans-serif;
   --font-body: 'Mixtape', sans-serif;
   --font-mono: 'Gt Pressura Mono', 'Space Mono', monospace;
 
@@ -184,7 +176,7 @@ video {
   align-items: center;
   width: 100%;
   height: 120px;
-  font-family: var(--font-projects);
+  font-family: var(--font-display);
   font-style: normal;
   font-weight: 800;
   font-size: clamp(68px, 9vw, 136px);
