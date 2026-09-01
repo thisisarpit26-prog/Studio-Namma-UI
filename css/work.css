@@ -168,8 +168,8 @@ video {
    ========================================================== */
 
 .home-playground {
-  margin-top: 2rem;
-  padding-bottom: 8rem;
+  margin-top: 0;
+  padding-bottom: 6rem;
 }
 
 .home-playground > span {
@@ -178,28 +178,10 @@ video {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-weight: 500;
-  color: var(--text-primary);
+  color: var(--text-secondary);
   display: block;
   text-align: left;
-  margin-bottom: 2.5rem;
-}
-
-.home-playground a.home-playground-title {
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: clamp(100px, 15vw, 220px);
-  line-height: 0.81;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-  color: var(--text-primary);
-  transition: color 0.2s ease;
-}
-
-.home-playground-link-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 3rem 0 5rem 0;
+  margin-bottom: 24px;
 }
 
 .home-playground-cards-container {
@@ -445,17 +427,12 @@ video {
   }
 
   .home-playground {
-    margin-top: 2rem;
+    margin-top: 0;
     padding-bottom: 4rem;
   }
 
   .home-playground-card {
     width: 100% !important;
-  }
-
-  .home-playground a.home-playground-title {
-    font-size: clamp(60px, 16vw, 120px);
-    line-height: 0.85;
   }
 
   .work-text-list__showcase-inner {
