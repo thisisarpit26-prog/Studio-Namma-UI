@@ -159,6 +159,28 @@
     },
   ];
 
+  const playgroundCardsData = [
+    { video: 'assets/playground-video1.mp4', photo: 'assets/playground-photo1.webp', alt: 'Studio Namma Project 1' },
+    { video: 'assets/playground-video2.mp4', photo: 'assets/playground-photo2.webp', alt: 'Studio Namma Project 2' },
+    { video: 'assets/playground-video3.mp4', photo: 'assets/playground-photo3.webp', alt: 'Studio Namma Project 3' },
+    { video: 'assets/playground-video4.mp4', photo: 'assets/playground-photo4.webp', alt: 'Studio Namma Project 4' }
+  ];
+
+  function renderPlaygroundCards() {
+    const container = document.getElementById('homePlaygroundCards') || document.querySelector('.home-playground-cards-container');
+    if (!container) return;
+    container.innerHTML = '';
+    playgroundCardsData.forEach(item => {
+      const card = document.createElement('div');
+      card.className = 'home-playground-card';
+      card.innerHTML = `
+        <video class="home-playground-video" src="${item.video}" autoplay muted loop playsinline></video>
+        <img src="${item.photo}" alt="${item.alt}" loading="lazy">
+      `;
+      container.appendChild(card);
+    });
+  }
+
   function renderTextList() {
     const container = document.getElementById('workProjectItems') || document.querySelector('.work-text-list__items');
     if (!container) return;
@@ -217,7 +239,6 @@
       const nodes = Array.from(el.childNodes);
       el.innerHTML = '';
 
-
       let currentWord = document.createElement('span');
       currentWord.className = 'work-split-word';
 
@@ -229,6 +250,12 @@
         } else if (node.nodeType === Node.TEXT_NODE) {
           const chars = node.textContent.split('');
           chars.forEach(ch => {
+            if (ch === ' ') {
+              const space = document.createElement('span');
+              space.innerHTML = '&nbsp;';
+              currentWord.appendChild(space);
+              return;
+            }
             const mask = document.createElement('span');
             mask.className = 'work-split-char-mask';
 
@@ -238,22 +265,29 @@
 
             mask.appendChild(charSpan);
             currentWord.appendChild(mask);
-
           });
         }
       });
 
       el.appendChild(currentWord);
-
-      const allChars = el.querySelectorAll('.work-split-char');
-      const stagger = 60;
-
-      allChars.forEach((charSpan, i) => {
-        setTimeout(() => {
-          charSpan.classList.add('risen');
-        }, 100 + i * stagger);
-      });
     });
+
+    const splitObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const allChars = entry.target.querySelectorAll('.work-split-char');
+          const stagger = 45;
+          allChars.forEach((charSpan, i) => {
+            setTimeout(() => {
+              charSpan.classList.add('risen');
+            }, 60 + i * stagger);
+          });
+          splitObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
+
+    elements.forEach(el => splitObserver.observe(el));
   }
 
   function initTextListHover() {
@@ -611,10 +645,45 @@
     });
   }
 
+  function initPlaygroundCards() {
+    const cards = document.querySelectorAll('.home-playground-card');
+    if (!cards.length) return;
+
+    const cardObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('risen');
+          cardObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+    cards.forEach(card => cardObserver.observe(card));
+  }
+
+  function initRevealObserver() {
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.02, rootMargin: '0px 0px -20px 0px' }
+    );
+
+    document.querySelectorAll('[data-reveal]').forEach((el) => revealObserver.observe(el));
+  }
+
   function initWork() {
+    renderPlaygroundCards();
     renderTextList();
     renderArchives();
     initSplitTextAnimation();
+    initPlaygroundCards();
+    initRevealObserver();
     initTextListHover();
     initArchivesParallax();
     initPushableImages();
