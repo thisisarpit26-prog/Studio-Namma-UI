@@ -162,8 +162,3 @@ Contributions, issues, and feature suggestions are welcome!
 
 ---
 
-## 📄 License & Attribution
-
-- Built by [Arpit](https://github.com/thisisarpit26-prog).
-- Inspired by the creative direction and digital craft of **Studio Namma**.
-- Distributed under the **MIT License**. See `LICENSE` for more information.
