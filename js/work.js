@@ -8,70 +8,70 @@
       name: 'MALIBOU',
       slug: 'malibou',
       video: 'https://cdn.prod.website-files.com/679cb9cacf00799ba4b4c985%2F68c349e844f77d523b18b8d9_MALIBOU-video-cover-work-transcode.mp4',
-      preview: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80',
+      preview: 'assets/workimages/preview-malibou.jpg',
       link: 'https://studionamma.com/work/malibou'
     },
     {
       name: 'ZEFIR',
       slug: 'zefir',
       video: 'https://cdn.prod.website-files.com/679cb9cacf00799ba4b4c985%2F68c34afef65d7aef8cdf1b51_zefir-video-cover-work-transcode.mp4',
-      preview: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
+      preview: 'assets/workimages/preview-zefir.jpg',
       link: 'https://studionamma.com/work/zefir'
     },
     {
       name: 'HEYSIMON',
       slug: 'heysimon',
       video: 'https://cdn.prod.website-files.com/679cb9cacf00799ba4b4c985%2F68c34c1b6d0149efa3e3ee74_hey-simon-cover-work-transcode.mp4',
-      preview: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80',
+      preview: 'assets/workimages/preview-heysimon.jpg',
       link: 'https://studionamma.com/work/heysimon'
     },
     {
       name: 'OSOL',
       slug: 'osol',
       video: 'https://cdn.prod.website-files.com/679cb9cacf00799ba4b4c985%2F68c34c799a0fdd8c0ab752cf_OSOL-COVER-work-transcode.mp4',
-      preview: 'https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1200&q=80',
+      preview: 'assets/workimages/preview-osol.jpg',
       link: 'https://studionamma.com/work/osol'
     },
     {
       name: 'SUPERCOMICS',
       slug: 'supercomics',
       video: 'https://cdn.prod.website-files.com/679cb9cacf00799ba4b4c985%2F68c34d6268b8fea92f3507a7_supercomics-cover-work-transcode.mp4',
-      preview: 'https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1200&q=80',
+      preview: 'assets/workimages/preview-supercomics.jpg',
       link: 'https://studionamma.com/work/supercomics'
     },
     {
       name: 'SILVR',
       slug: 'silvr',
       video: 'https://cdn.prod.website-files.com/679cb9cacf00799ba4b4c985%2F68c34dcde68d97df2b61f466_SILVR-Reel-03-video-2-version-ciel-work-transcode.mp4',
-      preview: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80',
+      preview: 'assets/workimages/preview-silvr.jpg',
       link: 'https://studionamma.com/work/silvr'
     },
     {
       name: 'MATERA',
       slug: 'matera',
       video: 'https://cdn.prod.website-files.com/679cb9cacf00799ba4b4c985%2F68c34e6731bcfb58b939fdae_matera-cover-work-transcode.mp4',
-      preview: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80',
+      preview: 'assets/workimages/preview-matera.jpg',
       link: 'https://studionamma.com/work/matera'
     },
     {
       name: 'ORUS ENERGY',
       slug: 'orus-energy',
       video: 'https://cdn.prod.website-files.com/679cb9cacf00799ba4b4c985%2F68c34ef2f8b849c927427c6e_Orus-Energy-cover-work-transcode.mp4',
-      preview: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80',
+      preview: 'assets/workimages/preview-orus-energy.jpg',
       link: 'https://studionamma.com/work/orus-energy'
     },
     {
       name: 'CHANCE',
       slug: 'chance',
       video: 'https://cdn.prod.website-files.com/679cb9cacf00799ba4b4c985%2F68d14f4d581e91da74de2f9f_chance-cover-transcode.mp4',
-      preview: 'https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1200&q=80',
+      preview: 'assets/workimages/preview-chance.jpg',
       link: 'https://studionamma.com/work/chance'
     },
     {
       name: 'INTRAMUROS',
       slug: 'intramuros',
       video: 'https://cdn.prod.website-files.com/679cb9cacf00799ba4b4c985%2F68c34fa408140526badcb49a_intra-cover-work-transcode.mp4',
-      preview: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80',
+      preview: 'assets/workimages/preview-intramuros.jpg',
       link: 'https://studionamma.com/work/intramuros'
     },
   ];
@@ -80,81 +80,81 @@
     {
       id: 'qonto', caption: 'Qonto, Scale-Up. 2023.',
       images: [
-        { src: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80', alt: 'Yosemite lake and valley reflection' },
-        { src: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80', alt: 'Majestic alpine mountain ridge' },
-        { src: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80', alt: 'Coastal sunset on sandy beach' },
+        { src: 'assets/workimages/archive-qonto-1.jpg', alt: 'Yosemite lake and valley reflection' },
+        { src: 'assets/workimages/archive-qonto-2.jpg', alt: 'Majestic alpine mountain ridge' },
+        { src: 'assets/workimages/archive-qonto-3.jpg', alt: 'Coastal sunset on sandy beach' },
       ]
     },
     {
       id: 'alan', caption: 'Alan, Scale-Up. 2022.', isRight: true,
       images: [
-        { src: 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80', alt: 'Golden desert sand dunes' },
-        { src: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80', alt: 'Misty green mountain valley' },
-        { src: 'https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=80', alt: 'Dramatic ocean waves surging' },
+        { src: 'assets/workimages/archive-alan-1.jpg', alt: 'Golden desert sand dunes' },
+        { src: 'assets/workimages/archive-alan-2.jpg', alt: 'Misty green mountain valley' },
+        { src: 'assets/workimages/archive-alan-3.jpg', alt: 'Dramatic ocean waves surging' },
       ]
     },
     {
       id: 'jump', caption: 'Jump, Scale-Up. 2023.',
       images: [
-        { src: 'https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80', alt: 'Deep emerald pine forest' },
-        { src: 'https://images.unsplash.com/photo-1505118380757-91f5f5632de0?auto=format&fit=crop&w=800&q=80', alt: 'Rugged seaside cliffside' },
-        { src: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=800&q=80', alt: 'Rolling golden countryside hills' },
+        { src: 'assets/workimages/archive-jump-1.jpg', alt: 'Deep emerald pine forest' },
+        { src: 'assets/workimages/archive-jump-2.jpg', alt: 'Rugged seaside cliffside' },
+        { src: 'assets/workimages/archive-jump-3.jpg', alt: 'Rolling golden countryside hills' },
       ]
     },
     {
       id: 'bstll', caption: 'BSTLL, Architecture. 2023.', isRight: true,
       images: [
-        { src: 'https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=800&q=80', alt: 'Snowy winter mountain summits' },
-        { src: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80', alt: 'Sunlight filtering through autumn trees' },
-        { src: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=800&q=80', alt: 'Vibrant spring wildflower field' },
+        { src: 'assets/workimages/archive-bstll-1.jpg', alt: 'Snowy winter mountain summits' },
+        { src: 'assets/workimages/archive-bstll-2.jpg', alt: 'Sunlight filtering through autumn trees' },
+        { src: 'assets/workimages/archive-bstll-3.jpg', alt: 'Vibrant spring wildflower field' },
       ]
     },
     {
       id: 'co2ai', caption: 'CO2 AI, Scale-Up. 2023.',
       images: [
-        { src: 'https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=800&q=80', alt: 'Luminous green northern lights' },
-        { src: 'https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=800&q=80', alt: 'Turquoise ocean water texture' },
-        { src: 'https://images.unsplash.com/photo-1434725039720-aaad6dd32dfe?auto=format&fit=crop&w=800&q=80', alt: 'Towering river canyon gorge' },
+        { src: 'assets/workimages/archive-co2ai-1.jpg', alt: 'Luminous green northern lights' },
+        { src: 'assets/workimages/archive-co2ai-2.jpg', alt: 'Turquoise ocean water texture' },
+        { src: 'assets/workimages/archive-co2ai-3.jpg', alt: 'Towering river canyon gorge' },
       ]
     },
     {
       id: 'elevate', caption: 'Elevate, Sport. 2025.', isRight: true,
       images: [
-        { src: 'https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=800&q=80', alt: 'Powerful forest waterfall' },
-        { src: 'https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?auto=format&fit=crop&w=800&q=80', alt: 'Glacier peaks under clear sky' },
-        { src: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80', alt: 'Golden lake sunset panorama' },
+        { src: 'assets/workimages/archive-elevate-1.jpg', alt: 'Powerful forest waterfall' },
+        { src: 'assets/workimages/archive-elevate-2.jpg', alt: 'Glacier peaks under clear sky' },
+        { src: 'assets/workimages/archive-elevate-3.jpg', alt: 'Golden lake sunset panorama' },
       ]
     },
     {
       id: 'antartic', caption: 'Antartic, Agency. 2023.',
       images: [
-        { src: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=800&q=80', alt: 'Utah red rock canyons' },
-        { src: 'https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=800&q=80', alt: 'Lush sunlit forest path' },
-        { src: 'https://images.unsplash.com/photo-1471922694854-ff1b63b20054?auto=format&fit=crop&w=800&q=80', alt: 'Ocean coastline sea cliffs' },
+        { src: 'assets/workimages/archive-antartic-1.jpg', alt: 'Utah red rock canyons' },
+        { src: 'assets/workimages/archive-antartic-2.jpg', alt: 'Lush sunlit forest path' },
+        { src: 'assets/workimages/archive-antartic-3.jpg', alt: 'Ocean coastline sea cliffs' },
       ]
     },
     {
       id: 'gotosell', caption: 'Go To Sell, Services. 2024.', isRight: true,
       images: [
-        { src: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=800&q=80', alt: 'Terraced emerald green hills' },
-        { src: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80', alt: 'Sunlight over wild mountain landscape' },
-        { src: 'https://images.unsplash.com/photo-1426604966848-d7adac402bff?auto=format&fit=crop&w=800&q=80', alt: 'Deep green mountain rainforest' },
+        { src: 'assets/workimages/archive-gotosell-1.jpg', alt: 'Terraced emerald green hills' },
+        { src: 'assets/workimages/archive-gotosell-2.jpg', alt: 'Sunlight over wild mountain landscape' },
+        { src: 'assets/workimages/archive-gotosell-3.jpg', alt: 'Deep green mountain rainforest' },
       ]
     },
     {
       id: 'yieldstudio', caption: 'Yield Studio, Agency. 2022.',
       images: [
-        { src: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=800&q=80', alt: 'Pristine mountain lake reflection' },
-        { src: 'https://images.unsplash.com/photo-1505881502353-a1986add3762?auto=format&fit=crop&w=800&q=80', alt: 'Scenic coastal bay aerial' },
-        { src: 'https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=800&q=80', alt: 'Pink spring blossoms' },
+        { src: 'assets/workimages/archive-yieldstudio-1.jpg', alt: 'Pristine mountain lake reflection' },
+        { src: 'assets/workimages/archive-yieldstudio-2.jpg', alt: 'Scenic coastal bay aerial' },
+        { src: 'assets/workimages/archive-yieldstudio-3.jpg', alt: 'Pink spring blossoms' },
       ]
     },
     {
       id: 'intramuros-old', caption: 'Intramuros, Media. 2021.', isRight: true,
       images: [
-        { src: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80', alt: 'Atmospheric foggy alpine summits' },
-        { src: 'https://images.unsplash.com/photo-1470240731273-7821a6eeb6bd?auto=format&fit=crop&w=800&q=80', alt: 'Sunrise warmth over valley horizon' },
-        { src: 'https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=800&q=80', alt: 'Misty evergreen forest expanse' },
+        { src: 'assets/workimages/archive-intramuros-old-1.jpg', alt: 'Atmospheric foggy alpine summits' },
+        { src: 'assets/workimages/archive-intramuros-old-2.jpg', alt: 'Sunrise warmth over valley horizon' },
+        { src: 'assets/workimages/archive-intramuros-old-3.jpg', alt: 'Misty evergreen forest expanse' },
       ]
     },
   ];
