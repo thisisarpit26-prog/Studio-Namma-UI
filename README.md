@@ -15,7 +15,7 @@
 | 👑 **Team Leader** | **Arpit** | Home Page — Hero section, Playground Grid, Services Accordion, Custom Cursor & Theming |
 | 🛠️ **Member** | **Sandeep** | Work Page — Portfolio Showcase, Interactive Text List & Project Archives |
 | 🛠️ **Member** | **Satyam** | Footer — Dynamic Footer Injection & Newsletter Interaction |
-| 🛠️ **Member** | **Aditya** | Footer — Layout, Styling & Responsive Footer Design |
+| 🛠️ **Member** | **Aditya** | Navbar — Layout, Styling & Responsive Navbar Design |
 
 ---
 
