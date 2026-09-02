@@ -1,7 +1,3 @@
-/* =========================================
-   NAVBAR STYLES (Studio Namma - Pixel Perfect)
-   ========================================= */
-
 .navbar {
   position: sticky;
   top: 0;
@@ -77,10 +73,6 @@
     transform: translate(0px, 0px);
   }
 }
-
-/* =========================================
-   MENU OVERLAY PAGE
-   ========================================= */
 
 .navbar-menu-page {
   height: calc(100vh - 44px);
@@ -180,10 +172,6 @@
   object-fit: cover;
 }
 
-/* =========================================
-   CONTACT OVERLAY PAGE
-   ========================================= */
-
 .navbar-contact-page {
   position: fixed;
   top: 0;
@@ -257,7 +245,6 @@
   display: block;
 }
 
-/* Contact Form */
 .navbar-contact-form {
   margin-top: 48px;
   width: 100%;

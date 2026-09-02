@@ -1,7 +1,3 @@
-/* ==========================================================
-   CUSTOM FONTS (Studio Namma Official Typefaces)
-   ========================================================== */
-
 @font-face {
   font-family: 'Mixtape Extra Condensed';
   src: url('../fonts/MixtapeExtraCondensed-ExtraBold.otf') format('opentype'),
@@ -64,11 +60,6 @@
   font-style: normal;
   font-display: swap;
 }
-
-
-/* ==========================================================
-   CSS VARIABLES & GLOBAL BASE
-   ========================================================== */
 
 :root {
   --bg: #e4e4e4;
@@ -145,11 +136,6 @@ a {
   width: 100%;
 }
 
-
-/* ==========================================================
-   HERO SECTION
-   ========================================================== */
-
 .home-hero {
   min-height: calc(100vh - 44px);
   display: flex;
@@ -192,11 +178,6 @@ a {
   white-space: nowrap;
 }
 
-
-/* ==========================================================
-   SPLIT TEXT ANIMATION
-   ========================================================== */
-
 .home-split-word {
   display: inline-block;
 }
@@ -216,11 +197,6 @@ a {
 .home-split-char.risen {
   transform: translateY(0);
 }
-
-
-/* ==========================================================
-   VIDEO / SHOWREEL SECTION
-   ========================================================== */
 
 .home-video-section {
   position: relative;
@@ -251,11 +227,6 @@ a {
   border-radius: 12px;
   pointer-events: none;
 }
-
-
-/* ==========================================================
-   DESCRIPTION SECTION
-   ========================================================== */
 
 .home-description {
   text-align: center;
@@ -289,11 +260,6 @@ a {
   color: var(--text-primary);
   margin-top: 0;
 }
-
-
-/* ==========================================================
-   PLAYGROUND / SELECTED PROJECTS
-   ========================================================== */
 
 .home-playground {
   margin-top: 4rem;
@@ -397,11 +363,6 @@ a {
   z-index: 1;
   transition: opacity 0.25s ease;
 }
-
-
-/* ==========================================================
-   SERVICES SECTION
-   ========================================================== */
 
 .home-services {
   margin-top: 4rem;
@@ -536,11 +497,6 @@ a {
   font-weight: 500;
 }
 
-
-/* ==========================================================
-   CLIENT LOGOS STRIP
-   ========================================================== */
-
 .home-logo {
   display: flex;
   gap: 3em;
@@ -564,11 +520,6 @@ a {
   transform: translateY(0);
 }
 
-
-/* ==========================================================
-   SCROLL REVEAL
-   ========================================================== */
-
 [data-reveal] {
   opacity: 0;
   transform: translateY(40px);
@@ -580,11 +531,6 @@ a {
   opacity: 1;
   transform: translateY(0);
 }
-
-
-/* ==========================================================
-   CUSTOM CURSOR FOLLOWER
-   ========================================================== */
 
 .home-moving-visual-wrapper {
   position: fixed;

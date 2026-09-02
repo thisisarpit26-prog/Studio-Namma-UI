@@ -1,7 +1,3 @@
-// =========================================
-//   FOOTER COMPONENT (Studio Namma - Pixel Perfect)
-// =========================================
-
 (() => {
     const footerVideos = [
         "https://cdn.prod.website-files.com/679cb9cacf00799ba4b4c985%2F68dfa249c8ad1d2624abf3d5_Footer-Service-designV2-transcode.mp4",
@@ -50,13 +46,9 @@
 
         footerEl.innerHTML = "";
 
-        // =========================================
-        // BOX 1: PITCH & LET'S WORK TOGETHER
-        // =========================================
         const box1 = document.createElement("div");
         box1.className = "footer-box1";
 
-        // Left: LET'S WORK + [IMAGE] TOGETHER
         const box1Left = document.createElement("div");
         box1Left.className = "footer-box1-left";
 
@@ -83,7 +75,6 @@
         row2.append(imageWrap, title2);
         box1Left.append(title1, row2);
 
-        // Right: Pitch text & Say Hello link
         const box1Right = document.createElement("div");
         box1Right.className = "footer-box1-right";
 
@@ -102,9 +93,6 @@
         box1.append(box1Left, box1Right);
         footerEl.appendChild(box1);
 
-        // =========================================
-        // BOX 2: HORIZONTAL VIDEO REEL
-        // =========================================
         const box2 = document.createElement("div");
         box2.className = "footer-box2";
 
@@ -125,13 +113,9 @@
 
         footerEl.appendChild(box2);
 
-        // =========================================
-        // BOX 3: NAVIGATION & INFO
-        // =========================================
         const box3 = document.createElement("div");
         box3.className = "footer-box3";
 
-        // Left Links
         const box3Left = document.createElement("div");
         box3Left.className = "footer-box3-left";
 
@@ -159,7 +143,6 @@
 
         box3Left.append(pageLinksCol, socialLinksCol);
 
-        // Right Info Details
         const box3Right = document.createElement("div");
         box3Right.className = "footer-box3-right";
 
@@ -185,17 +168,11 @@
         box3.append(box3Left, box3Right);
         footerEl.appendChild(box3);
 
-        // =========================================
-        // BOX 4: BIG "NAMMA" DISPLAY
-        // =========================================
         const box4 = document.createElement("div");
         box4.className = "footer-box4";
         box4.textContent = "NAMMA";
         footerEl.appendChild(box4);
 
-        // =========================================
-        // SCROLL REVEAL OBSERVERS
-        // =========================================
         const footerObserver = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
@@ -224,9 +201,6 @@
             imageObserver.observe(el);
         });
 
-        // =========================================
-        // FIXED TICKER BAR
-        // =========================================
         let tickerBar = document.querySelector(".site-ticker-bar");
         if (!tickerBar) {
             tickerBar = document.createElement("div");
@@ -263,9 +237,6 @@
         }, 5000);
         updateTickerTime();
 
-        // =========================================
-        // FLOATING WHATSAPP BUTTON & CHAT MODAL
-        // =========================================
         if (!document.querySelector(".floating-whatsapp-btn")) {
             const waBtn = document.createElement("div");
             waBtn.className = "floating-whatsapp-btn";

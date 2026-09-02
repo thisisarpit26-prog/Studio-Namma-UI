@@ -1,7 +1,3 @@
-// ==========================================================
-//   HOME COMPONENT (Studio Namma - Scoped)
-// ==========================================================
-
 (() => {
     const heroLinesData = [
         'WE THINK',
@@ -336,7 +332,6 @@
         initServicesSection();
         initCursorFollower();
 
-        // Scroll reveals
         const homeRevealObserver = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
@@ -351,7 +346,6 @@
 
         document.querySelectorAll('[data-reveal]').forEach((el) => homeRevealObserver.observe(el));
 
-        // Client logo reveals
         const logoSection = document.querySelector('.home-logo');
         if (logoSection) {
             const logoObserver = new IntersectionObserver((entries) => {

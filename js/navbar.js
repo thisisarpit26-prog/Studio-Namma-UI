@@ -1,7 +1,3 @@
-// =========================================
-//   NAVBAR COMPONENT (Studio Namma - Pixel Perfect)
-// =========================================
-
 (() => {
     let darkModeVar = false;
 
@@ -16,11 +12,9 @@
 
         navbar.innerHTML = "";
 
-        // --- Left Container ---
         const leftDiv = document.createElement("div");
         leftDiv.className = "navbar-left";
 
-        // Heading: Studio Namma
         const headingDiv = document.createElement("div");
         headingDiv.className = "navbar-heading-div navbar-h1-div";
 
@@ -30,7 +24,6 @@
         heading.className = "navbar-heading navbar-h1";
         headingDiv.appendChild(heading);
 
-        // Theme Toggle
         const themeDiv = document.createElement("div");
         themeDiv.className = "navbar-theme-div navbar-h1-div";
 
@@ -41,11 +34,9 @@
 
         leftDiv.append(headingDiv, themeDiv);
 
-        // --- Right Container ---
         const rightDiv = document.createElement("div");
         rightDiv.className = "navbar-right";
 
-        // Menu Button
         const menuDiv = document.createElement("div");
         menuDiv.className = "navbar-menu-div navbar-h1-div";
 
@@ -54,7 +45,6 @@
         menuh1.className = "navbar-menu-h1-btn navbar-h1";
         menuDiv.appendChild(menuh1);
 
-        // Let's Talk Button
         const letstalkDiv = document.createElement("div");
         letstalkDiv.className = "navbar-letstalk-div navbar-h1-div";
 
@@ -66,7 +56,6 @@
         rightDiv.append(menuDiv, letstalkDiv);
         navbar.append(leftDiv, rightDiv);
 
-        // --- Menu Page Overlay ---
         let menuPage = document.querySelector(".navbar-menu-page");
         if (!menuPage) {
             menuPage = document.createElement("div");
@@ -139,7 +128,6 @@
         menuGrid.append(createMenuCol(col1Data), createMenuCol(col2Data));
         menuPage.appendChild(menuGrid);
 
-        // --- Event Listeners ---
         let menuFlag = false;
 
         navbar.querySelectorAll(".navbar-h1").forEach((h1) => {
@@ -170,7 +158,6 @@
             });
         });
 
-        // Theme Toggle
         themeDiv.addEventListener("click", () => {
             darkModeVar = !darkModeVar;
             if (darkModeVar) {
@@ -182,7 +169,6 @@
             }
         });
 
-        // Menu Toggle
         menuDiv.addEventListener("click", () => {
             menuFlag = !menuFlag;
             if (menuFlag) {
@@ -194,13 +180,11 @@
             }
         });
 
-        // Contact Page Open
         letstalkDiv.addEventListener("click", () => {
             createContactPage();
         });
     }
 
-    // --- Contact Overlay Page ---
     function createContactPage() {
         if (document.querySelector(".navbar-contact-page")) {
             return;
@@ -209,12 +193,10 @@
         const contactPage = document.createElement("div");
         contactPage.className = "navbar-contact-page";
 
-        // Let's Work Headline
         const letsWork = document.createElement("h1");
         letsWork.innerText = "LET'S WORK";
         letsWork.className = "navbar-contact-letswork";
 
-        // Together with video preview
         const togetherDiv = document.createElement("div");
         togetherDiv.className = "navbar-contact-together-div";
 
@@ -246,7 +228,6 @@
         togetherDiv.append(videoDiv, together);
         contactPage.append(letsWork, togetherDiv);
 
-        // Close button
         const close = document.createElement("div");
         close.innerText = "CLOSE [X]";
         close.className = "navbar-contact-close";
@@ -255,11 +236,9 @@
         });
         contactPage.append(close);
 
-        // Form
         const contactForm = document.createElement("div");
         contactForm.className = "navbar-contact-form";
 
-        // Name
         const nameRow = document.createElement("div");
         nameRow.className = "navbar-contact-row";
         const nameLabel = document.createElement("label");
@@ -269,7 +248,6 @@
         nameInput.placeholder = "CHUCK NORRIS";
         nameRow.append(nameLabel, nameInput);
 
-        // Email
         const emailRow = document.createElement("div");
         emailRow.className = "navbar-contact-row";
         const emailLabel = document.createElement("label");
@@ -279,7 +257,6 @@
         emailInput.placeholder = "WALKER@TEXAS-RANGERS.COM";
         emailRow.append(emailLabel, emailInput);
 
-        // Phone
         const phoneRow = document.createElement("div");
         phoneRow.className = "navbar-contact-row";
         const phoneLabel = document.createElement("label");
@@ -289,7 +266,6 @@
         phoneInput.placeholder = "XX XX XX XX XX";
         phoneRow.append(phoneLabel, phoneInput);
 
-        // Interests
         const interestRow = document.createElement("div");
         interestRow.className = "navbar-contact-row";
         const interestLabel = document.createElement("label");
@@ -310,7 +286,6 @@
 
         interestRow.append(interestLabel, interests);
 
-        // Message
         const msgRow = document.createElement("div");
         msgRow.className = "navbar-contact-row";
         const msgLabel = document.createElement("label");
